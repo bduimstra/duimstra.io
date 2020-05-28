@@ -25,15 +25,15 @@
 }
 
 h1 {
-    color: var(--white);
+    color: var(--charcoal);
     font-family: 'Chango';
     font-size: 20vw;
     text-align: center;
-    text-shadow: 0 0 2px var(--cadet);
+    /* text-shadow: 0 0 2px var(--cadet); */
 }
 
 body {
-    background-color: var(--cadet);
+    background-color: var(--white);
 }
 
 main {
