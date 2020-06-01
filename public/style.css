@@ -22,6 +22,7 @@
     --size5: calc(var(--size1) * 5);
     --size6: calc(var(--size1) * 6);
     --size7: calc(var(--size1) * 7);
+    --size8: calc(var(--size1) * 8);
 }
 
 h1 {
@@ -37,7 +38,49 @@ body {
 }
 
 main {
-    height: calc(100vh - 100px);
+    min-height: calc(100vh - 100px);
+}
+
+section {
+    margin: 0 auto;
+    min-width: 250px;
+    padding: var(--size8) 0;
+    width: 60%
+}
+
+ul li {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 6vw;
+    margin: 0 0 var(--size5) 0;
+}
+
+ul li span:not(.icon) {
+    padding: 0 0 0 var(--size3);
+}
+
+ul li .icon {
+    display: inline-flex;
+    max-width: var(--size7);
+    min-width: var(--size-4);
+    width: 25%;
+}
+
+ul li a {
+    color: var(--charcoal);
+    text-decoration: none;
+}
+
+svg {
+    fill: var(--powder-blue);
+    height: 100%;
+    width: 100%;
+    transition: all linear 300ms;
+}
+
+ul li:hover svg {
+    fill: var(--cadet);
 }
 
 footer {
